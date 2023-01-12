@@ -51,15 +51,15 @@ function bothfunction(){
 	back.style.display = "block";
 	title.innerHTML = "MONDAY";
 }
-document.querySelector('.bothTuesday').addEventListener('click', bothfunction);
-function bothfunction(){
+document.querySelector('.bothTuesday').addEventListener('click', bothfunction2);
+function bothfunction2(){
 	tuesday.style.display = "grid";
 	home.style.display = "none";
 	back.style.display = "block";
 	title.innerHTML = "TUESDAY";
 }
-document.querySelector('.bothWednesday').addEventListener('click', bothfunction);
-function bothfunction(){
+document.querySelector('.bothWednesday').addEventListener('click', bothfunction3);
+function bothfunction3(){
 	wednesday.style.display = "grid";
 	home.style.display = "none";
 	back.style.display = "block";
