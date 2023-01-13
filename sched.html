@@ -3,15 +3,15 @@
 <head>
 	<title>Schedule</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<section>
+<div class="menu"><i class='bx bx-menu-alt-right' ></i></div>
 	<div class="date">
-   		 <label class="title">SCHEDULE</label>
+   		 <label class="title date-title">SCHEDULE</label>
    		 <div class="back"> back</div>
    	</div>
-
 
 <div class="home">
 	<div class="home-schedule-list">
@@ -22,6 +22,7 @@
 		  	<li class="monday-act2d-list">Monday</li>
 		  	<li>Tuesday</li>
 		  	<li>Thursday</li>
+        <li>Wednesday</li>
 		  	<li>Friday</li>
 		  	<li>Saturday</li>
 		  </div>
@@ -34,8 +35,9 @@
 		  	<li>Wednesday</li>
 		  	<li>Thursday</li>
 		  	<li>Friday</li>
+        <li>Saturday</li>
 		</div>
-		<br><hr><br>
+		<br><hr>
 		<div class="room both">
 			<label>Schedule comparison</label>
 		</div>
@@ -43,11 +45,13 @@
 		  	<li class="bothMonday">Monday</li>
 		  	<li class="bothTuesday">Tuesday</li>
 		  	<li class="bothWednesday">Wednesday</li>
-		  	<li>Thursday</li>
-		  	<li>Friday</li>
+		  	<li class="bothThursday">Thursday</li>
+		  	<li class="bothFriday">Friday</li>
+        <li class="bothSaturday">Saturday</li>
 		</div>
 	</div>
 </div>
+
 <div class="monday-act2d">
 		TEKA LANG ANG HIRAP ICODE NETONG PART NATO
 	</div>
@@ -138,11 +142,11 @@
    	         	  Application Dev.
    	            </label>
    	         </div>
-   	         <div class="free">
-          		<label class="title vacant">
-   	         	  6:30PM
-   	            </label>
-          	</div>
+   	         <div class="free" style=" border: 1px solid red" >
+              <label class="title vacant"  style=" background: rgba(255,0, 0, .18);">
+                6:30PM
+                </label>
+            </div>
 
    	    </div>
    	    <div class="line"></div>
@@ -269,7 +273,7 @@
    	      <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
 
 </div>
- </section>
+
 
  <!-- ===== wednesday ===== -->
 
@@ -282,8 +286,8 @@
    	    <div class="content">  
    	       
        <div class="content">  
-   	         <div class="sub">
-   	         	<label class="title">
+   	         <div class="sub" style="background: rgb(0,0,255, 0.1);">
+   	         	<label class="title" >
    	         	  NO CLASS
    	            </label>
    	         </div>
@@ -350,15 +354,348 @@
    	            </label>
    	        </div>
    	    </div>
-
-
-
    	     <div class="time">8:30PM</div>
-   	     
-   	      <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
+   	     <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
+</div>
+
+<!-- ===== thursday ===== -->
+
+   <div class="container-thursday">
+    <div class="section-both">
+      <span>ACT2D</span>
+      <span>ACT2F</span>
+    </div>
+        <div class="time">7:00AM</div>
+        <div class="content">  
+             <div class="sub">
+              <label class="title vacant">
+                VACANT
+                </label>
+             </div>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <div class="sub">
+              <label class="title vacant">
+                VACANT
+                </label>
+            </div>
+        </div>
+
+
+          <div class="time">10:00AM</div>
+         <div class="content">  
+             <div class="sub long">
+              <label class="title">
+                Object - Oriented Programming
+                </label>
+
+             </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+             <div class="sub long">
+              <label class="title vacant">
+                VACANT
+                </label></div>
+        </div>
+
+
+          <div class="time">12:30PM</div>
+           <div class="time vacant" style="color: green">12:30PM - 1:00PM</div>
+           <div class="time">1:00PM</div>
+         <div class="content">  
+             <div class="sub long">
+              <label class="title">
+                Web Tech 2
+                </label>
+             </div>
+             <div class="free">
+              <label class="title vacant">
+                3:30PM
+                </label>
+            </div>
+        </div>
+
+        <div class="line "></div>
+          <div class="content">
+            <div class="free">
+              <label class="title vacant">
+                1:30PM
+                </label>
+            </div>
+             <div class="sub long">
+              <label class="title ">
+                Business Software and Tools
+                </label>
+            </div>
+        </div>
+
+
+          <div class="time">4:00PM</div>
+         <div class="content">  
+             <div class="sub long">
+              <label class="title">
+                Application Dev.
+                </label>
+             </div>
+             <div class="free" style=" border: 1px solid red" >
+              <label class="title vacant"  style=" background: rgba(255,0, 0, .18);">
+                6:30PM
+                </label>
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+          <div class="content">
+            <div class="free">
+              <label class="title vacant">
+                4:30PM
+                </label>
+            </div>
+            <div class="sub long">
+              <label class="title">
+                Human Computer Interaction
+                </label>
+            </div>
+        </div>
+
+         <div class="time">7:00PM</div>
+         <div class="content">  
+            
+        </div>
+        <div class="line"></div>
+          <div class="content">
+            
+            <div class="sub long">
+              <label class="title">
+               PE 4
+                </label>
+            </div>
+        </div>
+
+        <div class="time">9:00PM</div>
+
+         
+          <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
+</div>
+
+<!-- ===== friday ===== -->
+
+<div class="container-friday">
+    <div class="section-both">
+      <span>ACT2D</span>
+      <span>ACT2F</span>
+    </div>
+        <div class="time">7:00AM</div>
+        <div class="content">  
+             <div class="sub">
+              <label class="title vacant">
+                VACANT
+                </label>
+             </div>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <div class="sub">
+              <label class="title vacant">
+                VACANT
+                </label>
+            </div>
+        </div>
+
+
+          <div class="time">10:00AM</div>
+         <div class="content">  
+          <div class="free">
+              <label class="title vacant">
+                10:30AM
+                </label>
+            </div>
+             <div class="sub long">
+              <label class="title">
+                Business Software and Tools
+                </label>
+
+             </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+             <div class="sub long">
+              <label class="title ">
+                Web Tech 2
+                </label>
+            </div>
+            <div class="free">
+              <label class="title vacant">
+                12:30PM
+                </label>
+            </div>
+        </div>
+           <div class="time">1:00PM</div>
+         <div class="content">  
+          <div class="free">
+              <label class="title vacant">
+                1:30PM
+                </label>
+            </div>
+             <div class="sub long">
+              <label class="title">
+                Human Computer Interaction
+                </label>
+             </div>
+        </div>
+
+        <div class="line "></div>
+          <div class="content">
+             <div class="sub long">
+              <label class="title ">
+               Object - Oriented Programming
+                </label>
+            </div>
+              <div class="free">
+              <label class="title vacant">
+                3:30PM
+                </label>
+            </div>
+        </div>
+          <div class="time">4:00PM</div>
+         <div class="content">  
+             <div class="free" style=" border: 1px solid red" >
+              <label class="title vacant"  style=" background: rgba(255,0, 0, .18);">
+                END OF CLASS
+                </label>
+            </div>
+
+        </div>
+        <div class="line"></div>
+          <div class="content">
+            <div class="sub long">
+              <label class="title">
+                Application Dev.
+                </label>
+            </div>
+        </div>
+
+
+         <div class="time">6:30PM</div>
+         
+          <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
 
 </div>
- </section>
+
+<!-- ===== saturday ===== -->
+
+<div class="container-saturday">
+    <div class="section-both">
+      <span>ACT2D</span>
+      <span>ACT2F</span>
+    </div>
+        <div class="time">7:00AM</div>
+        <div class="content">  
+             <div class="sub long">
+              <label class="title ">
+                Prof Dev 4
+                </label>
+             </div>
+        </div>
+        <div class="line"></div>
+        <div class="content">  
+           
+       <div class="content">  
+             <div class="sub" style="background: rgb(0,0,255, 0.1);">
+              <label class="title" >
+                NO CLASS
+                </label>
+             </div>
+        </div>
+        </div>
+
+
+          <div class="time">8:00AM</div>
+         <div class="content">  
+             <div class="sub long">
+              <label class="title">
+                PE 4
+                </label>
+
+             </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+            
+        </div>
+           <div class="time">10:00AM</div>
+           <div class="content">  
+           
+        </div>
+        <div class="line"></div>
+          <div class="content">
+           
+        </div>
+         <div class="content">  
+             <div class="sub long">
+              <label class="title">
+                RIZAL
+                </label>
+             </div>
+        </div>
+        <div class="line "></div>
+      <div class="time">1:00PM</div>   
+       <div class="content">  
+             <div class="sub">
+              <label class="title vacant">
+                1hr
+                <br><br>
+                VACANT
+                </label>
+
+             </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+            
+        </div>
+        <div class="line"></div>
+          <div class="content">
+           
+        </div>
+
+
+         <div class="time">2:00PM</div>
+         <div class="content">  
+           <div class="content">
+             <div class="sub long">
+             Entrepreneurial Management
+        </div>
+      </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+           
+        </div>
+
+
+         <div class="time">5:00PM</div>
+         <div class="content">  
+           <div class="content">
+             <div class="sub long">
+            System Analysis Design
+        </div>
+      </div>
+        </div>
+        <div class="line"></div>
+          <div class="content">
+           
+        </div>
+     
+           <div class="time">8:00PM</div>
+
+         
+          <div class="time vacant" style="color: red; height: 70px; background: rgba(255,0, 0, .18);">END OF CLASS</div>
+
+</div>
 
 <script src="main.js">
 </script>

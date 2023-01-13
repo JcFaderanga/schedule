@@ -1,6 +1,9 @@
 const monday = document.querySelector('.container-monday');
 const tuesday = document.querySelector('.container-tuesday');
 const wednesday = document.querySelector('.container-wednesday');
+const thursday = document.querySelector('.container-thursday');
+const friday = document.querySelector('.container-friday');
+const saturday = document.querySelector('.container-saturday');
 
 const act2d = document.querySelector('.act2d');
 const act2f = document.querySelector('.act2f');
@@ -65,6 +68,30 @@ function bothfunction3(){
 	back.style.display = "block";
 	title.innerHTML = "WEDNESDAY";
 }
+document.querySelector('.bothThursday').addEventListener('click', bothfunction4);
+function bothfunction4(){
+	thursday.style.display = "grid";
+	home.style.display = "none";
+	back.style.display = "block";
+	title.innerHTML = "THURSDAY";
+}
+document.querySelector('.bothFriday').addEventListener('click', bothfunction5);
+function bothfunction5(){
+	friday.style.display = "grid";
+	home.style.display = "none";
+	back.style.display = "block";
+	title.innerHTML = "FRIDAY";
+}
+document.querySelector('.bothSaturday').addEventListener('click', bothfunction6);
+function bothfunction6(){
+	saturday.style.display = "grid";
+	home.style.display = "none";
+	back.style.display = "block";
+	title.innerHTML = "SATURDAY";
+}
+
+
+
 
 const home = document.querySelector('.home');
 const mondayAct2d = document.querySelector('.monday-act2d-list');
@@ -84,9 +111,34 @@ document.querySelector('.back').addEventListener('click', ()=>{
 	monday.style.display ="none";
     tuesday.style.display="none";
     wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+    mondaypage.style.display = "none";
 	back.style.display = "none";
-	mondaypage.style.display = "none";
 	title.innerHTML = "SCHEDULE";
 
 
+});
+
+const body = document.body;
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains("scroll-down")
+  ) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
+  }
+  lastScroll = currentScroll;
 });
