@@ -56,9 +56,22 @@ document.getElementById('Schedule-comp').
 addEventListener('click', function(){
 	if (a==1) {
 		  document.querySelector('.inside-list').style.display = "block";
+		  document.querySelector('.inside-list-2d').style.display ="none";
 		  return a=0;
 	}else{
 		  document.querySelector('.inside-list').style.display = "none";
+		  return a=1;
+	}
+});
+
+document.getElementById('Schedule-act2d').
+addEventListener('click', function(){
+	if (a==1) {
+		  document.querySelector('.inside-list-2d').style.display = "block";
+		  document.querySelector('.inside-list').style.display = "none";
+		  return a=0;
+	}else{
+		  document.querySelector('.inside-list-2d').style.display = "none";
 		  return a=1;
 	}
 });
@@ -110,6 +123,10 @@ function bothfunctionA(){
     thursday.style.display="none";
     friday.style.display="none";
     saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -139,6 +156,10 @@ function bothfunctionB(){
     thursday.style.display="none";
     friday.style.display="none";
     saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -168,6 +189,10 @@ function bothfunctionC(){
     thursday.style.display="none";
     friday.style.display="none";
     saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -197,6 +222,10 @@ function bothfunctionD(){
     wednesday.style.display="none";
     friday.style.display="none";
     saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -226,6 +255,10 @@ function bothfunctionE(){
     wednesday.style.display="none";
     thursday.style.display="none";
     saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -256,6 +289,9 @@ function bothfunctionF(){
     thursday.style.display="none";
     friday.style.display="none";
 
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d .style.display = "none";
 }
 
 
@@ -263,16 +299,171 @@ function bothfunctionF(){
 
 
 const home = document.querySelector('.home');
+/*monday*/
 const mondayAct2d = document.querySelector('.monday-act2d-list');
-const mondaypage = document.querySelector('.monday-act2d');
+const mondayschedAct2d = document.querySelector('.monday-act2d');
+/*tuesday*/
+const tuesdayAct2d = document.querySelector('.tuesday-act2d-list');
+const tuesdayschedAct2d = document.querySelector('.tuesday-act2d');
+/*wednesday*/
+const wednesdayAct2d = document.querySelector('.wednesday-act2d-list');
+const wednesdayschedAct2d = document.querySelector('.wednesday-act2d');
+/*thursday*/
+const thursdayAct2d = document.querySelector('.thursday-act2d-list');
+const thursdayschedAct2d = document.querySelector('.thursday-act2d');
+/*friday*/
+const fridayAct2d = document.querySelector('.friday-act2d-list');
+const fridayschedAct2d = document.querySelector('.friday-act2d');
+/*saturday*/
+const saturdayAct2d = document.querySelector('.saturday-act2d-list');
+const saturdayschedAct2d = document.querySelector('.saturday-act2d');
 const title = document.querySelector('.title');
-
-
+/*monday*/
 mondayAct2d.addEventListener('click', ()=>{
 	home.style.display="none";
-	mondaypage.style.display = "flex";
-	back.style.display = "block";
+	mondayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "MONDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('monday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+	mondayschedAct2d.style.display = "flex";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "MONDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+});
 
+/*tuesday*/
+tuesdayAct2d.addEventListener('click', ()=>{
+	home.style.display="none";
+	tuesdayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "TUESDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('tuesday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "flex";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "TUESDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+});
+
+/*wednesday*/
+wednesdayAct2d.addEventListener('click', ()=>{
+	home.style.display="none";
+	wednesdayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "WEDNESDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('wednesday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "flex";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "WEDESDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+});
+
+/*thursday*/
+thursdayAct2d.addEventListener('click', ()=>{
+	home.style.display="none";
+	thursdayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "THURSDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('thursday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "flex";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "THURSDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+});
+/*friday*/
+fridayAct2d.addEventListener('click', ()=>{
+	home.style.display="none";
+	fridayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "FRIDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('friday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "flex";
+	saturdayschedAct2d.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "FRIDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+});
+/*saturday*/
+saturdayAct2d.addEventListener('click', ()=>{
+	home.style.display="none";
+	saturdayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "SATURDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2d').style.display ="block";
+});
+document.getElementById('saturday-act2d-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "SATURDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
 });
 /** BACK BUTTON **/
 document.querySelector('.back').addEventListener('click', ()=>{
@@ -283,10 +474,19 @@ document.querySelector('.back').addEventListener('click', ()=>{
     thursday.style.display="none";
     friday.style.display="none";
     saturday.style.display="none";
-    mondaypage.style.display = "none";
 	back.style.display = "none";
 	title.innerHTML = "SCHEDULE";
 	menu.style.display = "none";
+
+	/* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+    tuesdayschedAct2d.style.display = "none";
+    wednesdayschedAct2d.style.display = "none";
+    thursdayschedAct2d.style.display = "none";
+    fridayschedAct2d.style.display = "none";
+    saturdayschedAct2d.style.display = "none";
+
+
 
 
 });
