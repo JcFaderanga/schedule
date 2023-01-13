@@ -13,7 +13,8 @@ const scheduleList2 =document.querySelector('.act2f-list');
 const both=document.querySelector('.both');
 const bothList=document.querySelector('.both-list');
 const back=document.querySelector('.back');
-let a= 0;
+let a= true;
+
 let scrollinY;
 
 
@@ -26,17 +27,19 @@ if (scrollinY < window.scrollY) {
 
 scrollinY = window.scrollY;
   });
+
 act2d.addEventListener('click', ()=>{
 
-	if (a==0) {
+	if (a==true) {
 		  scheduleList1.style.display = "block";
-		  return a=1;
+		  return a=false;
 	}else{
 		  scheduleList1.style.display = "none";
-		  return a=0;
+		  return a=true;
 	}
  
 });
+
 
 /** MENU BUTTON **/
 const burger=document.querySelector('.menu');
@@ -51,50 +54,65 @@ document.querySelector('.nav-content').classList.toggle('active');
 });
 
 
-/** NAVBAR **/
+/** NAVBAR BUTTONS **/
 document.getElementById('Schedule-comp').
 addEventListener('click', function(){
-	if (a==1) {
+	if (a == true ) {
 		  document.querySelector('.inside-list').style.display = "block";
 		  document.querySelector('.inside-list-2d').style.display ="none";
-		  return a=0;
+		  document.querySelector('.inside-list-2f').style.display = "none";
+		  return a=false;
 	}else{
 		  document.querySelector('.inside-list').style.display = "none";
-		  return a=1;
+		  return a=true;
 	}
 });
 
 document.getElementById('Schedule-act2d').
 addEventListener('click', function(){
-	if (a==1) {
+	if (a == true) {
 		  document.querySelector('.inside-list-2d').style.display = "block";
+		  document.querySelector('.inside-list-2f').style.display = "none";
 		  document.querySelector('.inside-list').style.display = "none";
-		  return a=0;
+		  return a=false;
 	}else{
 		  document.querySelector('.inside-list-2d').style.display = "none";
-		  return a=1;
+		  return a=true;
+	}
+});
+
+document.getElementById('Schedule-act2f').
+addEventListener('click', function(){
+	if (a == true) {
+		  document.querySelector('.inside-list-2f').style.display = "block";
+		  document.querySelector('.inside-list-2d').style.display = "none";
+		  document.querySelector('.inside-list').style.display = "none";
+		  return a=false;
+	}else{
+		  document.querySelector('.inside-list-2d').style.display = "none";
+		  return a=true;
 	}
 });
 
 act2f.addEventListener('click', ()=>{
    
-   if (a==0) {
+   if (a==true) {
 		  scheduleList2.style.display = "block";
-		  return a=1;
+		  return a=false;
 	}else{
 		  scheduleList2.style.display = "none";
-		  return a=0;
+		  return a=true;
 	}
 });
 
 both.addEventListener('click', ()=>{
 
-	if (a==0) {
+	if (a==true) {
 		  bothList.style.display = "block";
-		  return a=1;
+		  return a=false;
 	}else{
 		  bothList.style.display = "none";
-		  return a=0;
+		  return a=true;
 	}
  
 });
@@ -126,7 +144,20 @@ function bothfunctionA(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -159,7 +190,20 @@ function bothfunctionB(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -192,7 +236,20 @@ function bothfunctionC(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -225,7 +282,20 @@ function bothfunctionD(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -258,7 +328,20 @@ function bothfunctionE(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -291,7 +374,20 @@ function bothfunctionF(){
 
     /* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
-    tuesdayschedAct2d .style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+
+	/* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
+
 }
 
 
@@ -341,6 +437,23 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+
+     /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
 
 /*tuesday*/
@@ -366,6 +479,22 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
 
 /*wednesday*/
@@ -391,6 +520,22 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
 
 /*thursday*/
@@ -416,6 +561,22 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
 /*friday*/
 fridayAct2d.addEventListener('click', ()=>{
@@ -440,6 +601,22 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
 /*saturday*/
 saturdayAct2d.addEventListener('click', ()=>{
@@ -464,7 +641,288 @@ addEventListener('click', ()=>{
 	menu.style.display = "flex";
 	document.querySelector('ul').classList.toggle('active');
     document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });
+
+/*monday*/
+const mondayAct2f = document.querySelector('.monday-act2f-list');
+const mondayschedAct2f = document.querySelector('.monday-act2f');
+/*tuesday*/
+const tuesdayAct2f = document.querySelector('.tuesday-act2f-list');
+const tuesdayschedAct2f = document.querySelector('.tuesday-act2f');
+/*wednesday*/
+const wednesdayAct2f = document.querySelector('.wednesday-act2f-list');
+const wednesdayschedAct2f = document.querySelector('.wednesday-act2f');
+/*thursday*/
+const thursdayAct2f = document.querySelector('.thursday-act2f-list');
+const thursdayschedAct2f = document.querySelector('.thursday-act2f');
+/*friday*/
+const fridayAct2f = document.querySelector('.friday-act2f-list');
+const fridayschedAct2f = document.querySelector('.friday-act2f');
+/*saturday*/
+const saturdayAct2f = document.querySelector('.saturday-act2f-list');
+const saturdayschedAct2f = document.querySelector('.saturday-act2f');
+
+
+/*monday*/
+mondayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	mondayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "MONDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('monday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+	mondayschedAct2f.style.display = "flex";
+	tuesdayschedAct2f.style.display = "none";
+	wednesdayschedAct2f.style.display = "none";
+	thursdayschedAct2f.style.display = "none";
+	fridayschedAct2f.style.display = "none";
+	saturdayschedAct2f.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "MONDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+ });
+
+/*tuesday*/
+tuesdayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	tuesdayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "TUESDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('tuesday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2f.style.display = "none";
+	tuesdayschedAct2f.style.display = "flex";
+	wednesdayschedAct2f.style.display = "none";
+	thursdayschedAct2f.style.display = "none";
+	fridayschedAct2f.style.display = "none";
+	saturdayschedAct2f.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "TUESDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+});
+
+/*wednesday*/
+wednesdayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	wednesdayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "WEDNESDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('wednesday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2f.style.display = "none";
+	tuesdayschedAct2f.style.display = "none";
+	wednesdayschedAct2f.style.display = "flex";
+	thursdayschedAct2f.style.display = "none";
+	fridayschedAct2f.style.display = "none";
+	saturdayschedAct2f.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "WEDESDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+});
+/*thursday*/
+thursdayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	thursdayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "THURSDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('thursday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2f.style.display = "none";
+	tuesdayschedAct2f.style.display = "none";
+	wednesdayschedAct2f.style.display = "none";
+	thursdayschedAct2f.style.display = "flex";
+	fridayschedAct2f.style.display = "none";
+	saturdayschedAct2f.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "THURSDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+});
+/*friday*/
+fridayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	fridayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "FRIDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('friday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2f.style.display = "none";
+	tuesdayschedAct2f.style.display = "none";
+	wednesdayschedAct2f.style.display = "none";
+	thursdayschedAct2f.style.display = "none";
+	fridayschedAct2f.style.display = "flex";
+	saturdayschedAct2f.style.display = "none";
+	back.style.display = "flex";
+	title.innerHTML = "FRIDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+});
+
+/*saturday*/
+saturdayAct2f.addEventListener('click', ()=>{
+	home.style.display="none";
+	saturdayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "FRIDAY";
+	menu.style.display = "flex";
+	document.querySelector('.inside-list-2f').style.display ="block";
+});
+document.getElementById('saturday-act2f-list').
+addEventListener('click', ()=>{
+    home.style.display="none";
+    mondayschedAct2f.style.display = "none";
+	tuesdayschedAct2f.style.display = "none";
+	wednesdayschedAct2f.style.display = "none";
+	thursdayschedAct2f.style.display = "none";
+	fridayschedAct2f.style.display = "none";
+	saturdayschedAct2f.style.display = "flex";
+	back.style.display = "flex";
+	title.innerHTML = "SATURDAY";
+	menu.style.display = "flex";
+	document.querySelector('ul').classList.toggle('active');
+    document.querySelector('.nav-content').classList.toggle('active');
+
+    /** comparison **/
+     monday.style.display ="none";
+     tuesday.style.display ="none";
+    wednesday.style.display="none";
+    thursday.style.display="none";
+    friday.style.display="none";
+    saturday.style.display="none";
+
+    /* ACT 2D PAGE */
+    mondayschedAct2d.style.display = "none";
+	tuesdayschedAct2d.style.display = "none";
+	wednesdayschedAct2d.style.display = "none";
+	thursdayschedAct2d.style.display = "none";
+	fridayschedAct2d.style.display = "none";
+	saturdayschedAct2d.style.display = "none";
+});
+
+
 /** BACK BUTTON **/
 document.querySelector('.back').addEventListener('click', ()=>{
 	document.querySelector('.home').style.display ="flex";
@@ -478,6 +936,12 @@ document.querySelector('.back').addEventListener('click', ()=>{
 	title.innerHTML = "SCHEDULE";
 	menu.style.display = "none";
 
+
+    /* NAVBARS BUTTON */
+	document.querySelector('.inside-list-2d').style.display = "none";
+	document.querySelector('.inside-list-2f').style.display = "none";
+	document.querySelector('.inside-list').style.display = "none";
+
 	/* ACT 2D PAGE */
     mondayschedAct2d.style.display = "none";
     tuesdayschedAct2d.style.display = "none";
@@ -486,29 +950,11 @@ document.querySelector('.back').addEventListener('click', ()=>{
     fridayschedAct2d.style.display = "none";
     saturdayschedAct2d.style.display = "none";
 
-
-
-
-});
-
-const body = document.body;
-let lastScroll = 0;
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= 0) {
-    body.classList.remove("scroll-up");
-    return;
-  }
-
-  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-up");
-    body.classList.add("scroll-down");
-  } else if (
-    currentScroll < lastScroll &&
-    body.classList.contains("scroll-down")
-  ) {
-    body.classList.remove("scroll-down");
-    body.classList.add("scroll-up");
-  }
-  lastScroll = currentScroll;
+    /* ACT 2F PAGE */
+    mondayschedAct2f.style.display = "none";
+    tuesdayschedAct2f.style.display = "none";
+    wednesdayschedAct2f.style.display = "none";
+    thursdayschedAct2f.style.display = "none";
+    fridayschedAct2f.style.display = "none";
+    saturdayschedAct2f.style.display = "none";
 });

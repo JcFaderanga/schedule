@@ -16,6 +16,7 @@
 <body>
 
 <div class="menu"><i class='bx bx-menu-alt-right' ></i></div>
+<!-- === NAVBAR === -->
 <div class="navbar" id="navbar">
    <label class="title date-title">SCHEDULE</label>
        <div class="back"> back</div>
@@ -43,13 +44,22 @@
                 <li id="saturday-act2d-list" class="inside-list-li">Saturday</li>
               </div>
 
-            <li><a href="#">ACT 2F</a></li>
+            <li id="Schedule-act2f"><a href="#">ACT 2F</a></li>
+            <div class="inside-list-2f">
+                <li id="monday-act2f-list" class="inside-list-li">Monday</li>
+                <li id="tuesday-act2f-list" class="inside-list-li">Tuesday</li>
+                <li id="wednesday-act2f-list" class="inside-list-li">Wednesday</li>
+                <li id="thursday-act2f-list" class="inside-list-li">Thursday</li>
+                <li id="friday-act2f-list" class="inside-list-li">Friday</li>
+                <li id="saturday-act2f-list" class="inside-list-li">Saturday</li>
+              </div>
           </ul>
       </div> 
 
- 
+ <!-- === HOME === -->
 <div class="home">
 	<div class="home-schedule-list">
+    <!-- === home act 2d button === -->
 		<div class="room act2d">
 			<label>ACT-2D</label>
 		</div>
@@ -61,18 +71,20 @@
 		  	<li class="friday-act2d-list">Friday</li>
         <li class="saturday-act2d-list">Saturday</li>
 		  </div>
+      <!-- === home act 2f button === -->
 		<div class="room act2f">
 			<label>ACT-2F</label>
 		</div>
 		<div class="date-list act2f-list">
-		  	<li>Monday</li>
-		  	<li>Tuesday</li>
-		  	<li>Wednesday</li>
-		  	<li>Thursday</li>
-		  	<li>Friday</li>
-        <li>Saturday</li>
+		  	<li class="monday-act2f-list">Monday</li>      
+        <li class="tuesday-act2f-list">Tuesday</li>
+        <li class="wednesday-act2f-list">Wednesday</li>
+        <li class="thursday-act2f-list">Thursday</li>
+        <li class="friday-act2f-list">Friday</li>
+        <li class="saturday-act2f-list">Saturday</li>
 		</div>
 		<br><hr>
+    <!-- === home act both button === -->
 		<div class="room both">
 			<label>Schedule comparison</label>
 		</div>
@@ -86,6 +98,7 @@
 		</div>
 	</div>
 </div>
+      <!-- === ACT 2D DATE SCHEDULES === -->
                <div class="monday-act2d">
                  <div class=" mon-act2d">
                   <span style="color: green">10:00AM - 12:30PM</span><br>
@@ -158,8 +171,87 @@
                   <span>System Analysis Design</span>
                  </div>
               </div>
+  <!-- === ACT 2F DATE SCHEDULES === -->
+              <div class="monday-act2f">
+                 <div class=" mon-act2f">
+                  <span style="color: green">1:30PM- 4:00PM</span><br>
+                  <span>Business Software and Tools</span>
+                 </div>
+                 <div class="mon-act2f">
+                  <span style="color: green">4:30PM- 7:00PM</span><br>
+                  <span>Human Computer Interaction</span>
+                 </div>
+              </div>
 
+              <div class="tuesday-act2f">
+                 <div class=" tue-act2f">
+                  <span style="color: green">1:00PM - 4:00PM</span><br>
+                  <span>Web Tech 2</span>
+                 </div>
+                 <div class="tue-act2f">
+                  <span style="color: green">4:30PM- 3:30PM</span><br>
+                  <span>Object - Oriented Programming</span>
+                 </div>
+                 <div class="tue-act2f">
+                  <span style="color: green">4:00PM - 6:30PM</span><br>
+                  <span>Application Dev.</span>
+                 </div>
+              </div>
 
+              <div class="wednesday-act2f">
+                 <div class=" wed-act2f">
+                  <span style="color: green">7:00AM - 10:00AM</span><br>
+                  <span>System Analysis Design</span>
+                 </div>
+                 <div class="wed-act2f">
+                  <span style="color: green">10:00AM- 1:00PM</span><br>
+                  <span>Rizal</span>
+                 </div>
+                 <div class="wed-act2f">
+                  <span style="color: green">1:00PM - 2:00PM/span><br>
+                  <span>Prof Dev 2</span>
+                 </div>
+                 <div class="wed-act2f">
+                  <span style="color: green">5:30PM - 8:30PM</span><br>
+                  <span>Entrepreneurial Management</span>
+                 </div>
+              </div>
+
+              <div class="thursday-act2f">
+                 <div class=" thu-act2f">
+                  <span style="color: green">1:30PM - 4:00PM</span><br>
+                  <span>Business Software and Tools</span>
+                 </div>
+                 <div class="thu-act2f">
+                  <span style="color: green">4:30PM- 7:00PM</span><br>
+                  <span>Human Computer Interaction</span>
+                 </div>
+                 <div class="thu-act2f">
+                  <span style="color: green">7:00PM - 9:00PM</span><br>
+                  <span>PE 4</span>
+                 </div>
+              </div>
+
+              <div class="friday-act2f">
+                 <div class=" fri-act2f">
+                  <span style="color: green">10:00AM - 12:30PM</span><br>
+                  <span>Web Tech 2</span>
+                 </div>
+                 <div class="fri-act2f">
+                  <span style="color: green">1:00PM- 3:30PM</span><br>
+                  <span>Object - Oriented Programming</span>
+                 </div>
+                 <div class="fri-act2f">
+                  <span style="color: green">4:00PM - 6:30PM</span><br>
+                  <span>Application Dev.</span>
+                 </div>
+              </div>
+
+              <div class="saturday-act2f">
+                 <div class="sat-act2f" style="display: flex; justify-content: center;align-items: center;">
+                  <span>NO CLASS</span><br>
+                 </div>  
+              </div> 
 
 
 

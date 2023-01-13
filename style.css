@@ -91,7 +91,7 @@ top: 0;
 height: 50px;
 width: 100%;
 }
-.inside-list, .inside-list-2d{/*div*/
+.inside-list, .inside-list-2d, .inside-list-2f{/*div*/
 	width: 100%;
 	padding-left:10px; 
 	background: rgb(0,0,0,.05);
@@ -205,7 +205,16 @@ align-items: center;
 .wednesday-act2d,
 .thursday-act2d,
 .friday-act2d,
-.saturday-act2d
+.saturday-act2d,
+
+
+.monday-act2f,
+.tuesday-act2f,
+.wednesday-act2f,
+.thursday-act2f,
+.friday-act2f,
+.saturday-act2f
+
 {
 	display: none;
 	flex-direction: column;
@@ -229,7 +238,16 @@ align-items: center;
 .wed-act2d,
 .thur-act2d,
 .fri-act2d,
-.sat-act2d{
+.sat-act2d,
+
+
+.mon-act2f,
+.tue-act2f,
+.wed-act2f,
+.thu-act2f,
+.fri-act2f,
+.sat-act2f
+{
 	width: 85%;
 	height: 100px;
 	margin: 20px auto;
