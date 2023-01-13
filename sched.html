@@ -3,15 +3,42 @@
 <head>
 	<title>Schedule</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+                     <!--ICON-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+                     <!--FONTS-->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap'); 
+  </style> 
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
 <div class="menu"><i class='bx bx-menu-alt-right' ></i></div>
-	<div class="date">
-   		 <label class="title date-title">SCHEDULE</label>
-   		 <div class="back"> back</div>
-   	</div>
+<div class="navbar" id="navbar">
+   <label class="title date-title">SCHEDULE</label>
+       <div class="back"> back</div>
+
+        <nav class="nav-content"> </nav>
+        <ul>
+            <a href="#" id="exit-btn">x</a>
+            <li id="Schedule-comp"><a href="#">Schedule comparison</a></li>
+              <div class="inside-list">
+                <li id="bothMonday" class="inside-list-li">Monday</li>
+                <li id="bothTuesday" class="inside-list-li">Tuesday</li>
+                <li id="bothWednesday" class="inside-list-li">Wednesday</li>
+                <li id="bothThursday" class="inside-list-li">Thursday</li>
+                <li id="bothFriday" class="inside-list-li">Friday</li>
+                <li id="bothSaturday" class="inside-list-li">Saturday</li>
+              </div>
+       
+            <li><a href="#">ACT 2D</a></li>
+
+            <li><a href="#">ACT 2f</a></li>
+          </ul>
+      </div> 
+
 
 <div class="home">
 	<div class="home-schedule-list">
@@ -105,7 +132,7 @@
 
 
    	      <div class="time">12:30PM</div>
-   	       <div class="time vacant" style="color: green">12:30PM - 1:00PM</div>
+   	       <div class="time vacant" style="color: green !important">12:30PM - 1:00PM</div>
    	       <div class="time">1:00PM</div>
    	     <div class="content">  
    	         <div class="sub long">
@@ -286,7 +313,7 @@
    	    <div class="content">  
    	       
        <div class="content">  
-   	         <div class="sub" style="background: rgb(0,0,255, 0.1);">
+   	         <div class="sub" style="background: rgb(0,0,255, 0.1) !important;">
    	         	<label class="title" >
    	         	  NO CLASS
    	            </label>
